@@ -18,8 +18,8 @@ export default {
         lg: '0 8px 16px var(--tw-shadow-color)',
       },
       backgroundImage: {
-        'tile': "url('./src/images/pattern.jpeg')",
-        'hero': "url('./src/images/bg.png')"
+        'tile': "url('./public/pattern.jpeg')",
+        'hero': "url('./public/bg.png')"
       },
       backgroundSize: {
         'tiny': '14rem'
