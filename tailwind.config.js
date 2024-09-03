@@ -12,6 +12,9 @@ export default {
       'display': ['Lilita One', 'sans-serif']
     },
     extend: {
+      aspectRatio: {
+        'logo': '409 / 88'
+      },
       textShadow: {
         sm: '0 1px 0 var(--tw-shadow-color)',
         DEFAULT: '0 2px 4px var(--tw-shadow-color)',
