@@ -3,9 +3,9 @@ export default function PercentVisualizer({ value } : { value: number }) {
   return <div className="flex flex-col pr-2 pb-1">
     {
       [...Array(10).keys()].map((i) => (
-        <div className="flex flex-row">
+        <div key={i} className="flex flex-row">
           {
-            [...Array(10).keys()].map((j) => <SinglePercent on={(101 - 10 * i - (10 - j)) <= Math.ceil(value)} />)
+            [...Array(10).keys()].map((j) => <SinglePercent key={j} on={(101 - 10 * i - (10 - j)) <= Math.ceil(value)} />)
           }
         </div>
       ))

@@ -48,10 +48,10 @@ export default function Hero() {
   
   return (
     <div className='w-screen my-h-screen'>
-      <div className='absolute top-0 bottom-0 right-0 left-0 bg-hero bg-no-repeat bg-cover bg-bottom -z-20' />
-      <div className='absolute top-0 bottom-0 right-0 left-0 bg-trusty-900 opacity-70 -z-10' />
-      <div className='flex flex-1 w-full h-full z-0'>
-        <div className='my-container m-auto'>
+      <div className='absolute top-0 bottom-0 right-0 left-0 bg-hero bg-no-repeat bg-cover bg-bottom z-0' />
+      <div className='absolute top-0 bottom-0 right-0 left-0 bg-trusty-900 opacity-70 z-10' />
+      <div className='flex flex-1 w-full h-full z-20'>
+        <div className='my-container m-auto z-20'>
           <h2 className='text-2xl md:text-3xl text-teal-50 font-medium text-shadow-sm shadow-serenity-shade'>Grow your business with the power of Gen A.I.</h2>
           <h1 className='text-5xl md:text-6xl text-serenity-shade font-display pt-2'>
             <span>
