@@ -9,6 +9,6 @@ export default defineConfig({
   integrations: [tailwind({
     configFile: 'tailwind.config.js'
   }), react()],
-  output: "server",
+  output: "hybrid",
   adapter: netlify()
 });
