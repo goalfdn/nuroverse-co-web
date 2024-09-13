@@ -13,8 +13,8 @@ export default function FeatureCard({ icon, alt, desc, detail }: Props) {
       <ImageContainer src={icon} alt={alt} />
     </div>
     <div className="flex flex-col flex-1 justify-start items-stretch">
-      <p className="text-2xl font-medium text-trusty-200 p-2">{desc}</p>
-      <p className="text-xl text-trusty-100 p-2">{detail}</p>
+      <p className="text-2xl font-medium text-teal-500 p-2">{desc}</p>
+      <p className="text-xl text-trusty-200 p-2">{detail}</p>
     </div>
   </div>;
 }

@@ -14,5 +14,5 @@ export default function PercentVisualizer({ value } : { value: number }) {
 }
 
 function SinglePercent({ on }: { on: boolean }) {
-  return <div className={"m-[1px] h-[4px] w-[4px] rounded-sm " + (!!on ? "bg-trusty-300" : "bg-teal-50 opacity-10")} />;
+  return <div className={"m-[1px] h-[4px] w-[4px] rounded-sm " + (!!on ? "bg-teal-500" : "bg-teal-50 opacity-10")} />;
 }

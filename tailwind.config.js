@@ -22,7 +22,7 @@ export default {
       },
       backgroundImage: {
         'tile': "url('/pattern.jpeg')",
-        'hero': "url('/bg.png')"
+        'hero': "url('/bg.webp')"
       },
       backgroundSize: {
         'tiny': '14rem'
