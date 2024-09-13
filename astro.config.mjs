@@ -10,5 +10,7 @@ export default defineConfig({
     configFile: 'tailwind.config.js'
   }), react()],
   output: "hybrid",
-  adapter: netlify()
+  adapter: netlify({
+    imageCDN: false
+  })
 });
