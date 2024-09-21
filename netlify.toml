@@ -2,3 +2,16 @@
   command = "npm run build"
   functions = ".netlify/functions-internal"
   publish = "dist"
+
+# Branch-specific configurations
+[branch.dev]
+  publish = "public/dev"
+
+[branch.staging]
+  publish = "public/staging"
+
+# Production branch will use the default settings
+[branch.production]
+
+[branch.deploy-preview]
+  publish = "public/preview"
