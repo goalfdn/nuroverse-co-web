@@ -27,11 +27,11 @@ export default function SubmissionForm() {
   
   return (
     <form className="flex flex-col mt-14 md:mx-3 justify-stretch" onSubmit={onSubmit}>
-      <div className="flex flex-row">
+      <div className="flex flex-col md:flex-row">
         <input value={firstName} onChange={(e) => setFirstName(e.target.value)} className="flex flex-1 my-3 md:mx-3 p-2 rounded-lg" type="text" placeholder="First Name" required />
         <input value={lastName} onChange={(e) => setLastName(e.target.value)} className="flex flex-1 my-3 md:mx-3 p-2 rounded-lg" type="text" placeholder="Last Name" required />
       </div>
-      <div className="flex flex-row">
+      <div className="flex flex-col md:flex-row">
         <input value={email} onChange={(e) => setEmail(e.target.value)} className="flex flex-1 my-3 md:mx-3 p-2 rounded-lg" type="text" placeholder="Work Email" required />
         <input value={companyName} onChange={(e) => setCompanyName(e.target.value)} className="flex flex-1 my-3 md:mx-3 p-2 rounded-lg" type="text" placeholder="Company Name" required />
       </div>
