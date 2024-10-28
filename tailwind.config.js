@@ -22,17 +22,18 @@ export default {
       },
       backgroundImage: {
         'tile': "url('/pattern.jpeg')",
-        'hero': "url('/bg.webp')"
+        'hero': "url('/bg.webp')",
+        'checked-box': "url('/checked-box.svg')",
       },
       backgroundSize: {
         'tiny': '14rem'
       },
       colors: {
-        'trusty-50': '#D5E6E3',
-        'trusty-100': '#C9E3DE',
-        'trusty-200': '#9ED1C8',
-        'trusty-300': '#0C8074',
-        'trusty-400': '#083D34',
+        'trusty-50': '#DCEAE8',
+        'trusty-100': '#D0E7E3',
+        'trusty-200': '#C1DFDA',
+        'trusty-300': '#0A7065',
+        'trusty-400': '#043B34',
         'trusty-500': '#02231E',
         'trusty-900': '#0B1412',
         'text-black': '#090909',

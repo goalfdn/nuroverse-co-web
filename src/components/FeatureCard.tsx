@@ -8,13 +8,13 @@ interface Props {
 }
 
 export default function FeatureCard({ icon, alt, desc, detail }: Props) {
-  return <div className="flex flex-col justify-start items-stretch rounded-lg border-[1px] border-opacity-5 border-teal-50 px-7 pt-12 pb-7 my-3 md:mx-3">
+  return <div className="flex flex-col justify-start items-stretch rounded-lg border-2 border-trusty-200 bg-trusty-100 px-7 pt-12 pb-7 my-3 md:mx-3">
     <div className="flex ml-2 mb-6 h-10">
       <ImageContainer src={icon} alt={alt} />
     </div>
     <div className="flex flex-col flex-1 justify-start items-stretch">
-      <p className="text-2xl font-medium text-teal-500 p-2">{desc}</p>
-      <p className="text-xl text-trusty-200 p-2">{detail}</p>
+      <p className="text-2xl font-bold text-trusty-300 p-2">{desc}</p>
+      <p className="text-xl p-2">{detail}</p>
     </div>
   </div>;
 }

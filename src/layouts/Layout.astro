@@ -24,13 +24,13 @@ const prefix = import.meta.env.NOVUS_URL_PREFIX;
 		<link rel="icon" type="image/svg+xml" href={favicon.src} />
 		<link rel="apple-touch-icon" href={favicon.src} />
 		<meta name="generator" content={Astro.generator} />
-		<script src=`https://${prefix}.nuroverse.co/novus-chat/index.js` type="module" defer />
+		<!-- <script src=`https://${prefix}.nuroverse.co/novus-chat/index.js` type="module" defer /> -->
 		<title>{title}</title>
 	</head>
 	<body>
 		<slot />
 		<!-- Novus AI Chat Embed -->
-		<nuroverse-assistant />
+		<!-- <nuroverse-assistant /> -->
 	</body>
 </html>
 <style is:global>
@@ -47,8 +47,8 @@ const prefix = import.meta.env.NOVUS_URL_PREFIX;
 	}
 	html {
 		background-size: 224px;
-		@apply bg-text-black;
-		@apply text-trusty-50;
+		@apply bg-trusty-50;
+		@apply text-text-black;
 	}
 
 	.my-container {
@@ -78,9 +78,9 @@ const prefix = import.meta.env.NOVUS_URL_PREFIX;
 		@apply hover:bg-serenity;
 	}
 	.btn-secondary {
-		@apply text-trusty-500;
-		@apply bg-teal-500;
-		@apply hover:bg-teal-400;
+		@apply bg-trusty-400;
+		@apply text-trusty-50;
+		@apply hover:text-serenity;
 	}
 	.gold-and-bold {
 		@apply font-bold;
@@ -97,6 +97,15 @@ const prefix = import.meta.env.NOVUS_URL_PREFIX;
 			Courier New,
 			monospace;
 	}
+
+	.section-title {
+		@apply text-5xl pt-8 font-display text-trusty-400 uppercase md:mx-3;
+	}
+
+	.section-subtitle {
+		@apply text-lg pb-8 uppercase font-bold text-trusty-300 md:mx-3;
+	}
+
 	.bg-color-animated {
 		background: linear-gradient(270deg, #02231e, #043b34);
 		background-size: 400% 400%;
@@ -105,6 +114,10 @@ const prefix = import.meta.env.NOVUS_URL_PREFIX;
 		-moz-animation: AnimateBackground 10s ease infinite;
 		-o-animation: AnimateBackground 10s ease infinite;
 		animation: AnimateBackground 10s ease infinite;
+	}
+
+	li {
+		@apply ml-12 -indent-12 text-xl before:content-[""] before:inline-block before:bg-checked-box before:bg-contain before:bg-no-repeat before:bg-center before:w-[2rem] before:h-[2rem] before:mr-4 before:align-bottom;
 	}
 
 	@-webkit-keyframes AnimateBackground {

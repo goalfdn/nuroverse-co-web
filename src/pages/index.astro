@@ -3,76 +3,52 @@ import Layout from '../layouts/Layout.astro';
 
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
-import StatCard from '../components/StatCard';
 import FeatureCard from '../components/FeatureCard';
 import Header from '../components/Header';
+import SupportStep from '../components/SupportStep';
+import PricingSection from '../components/PricingSection';
+import InspirationCarousel from '../components/InspirationCarousel';
+import SubmissionForm from '../components/SubmissionForm';
 
 import scissors from '../images/scissors.svg';
 import timer from '../images/timer.svg';
 import trend from '../images/trend.svg';
-import wand from '../images/wand.svg';
+
 ---
 <Layout title="nuroverse">
 	<main class='flex flex-col'>
 		<Header client:load />
 		<Hero client:load />
-		<div class="bg-text-black py-24 z-10">
+		<div class="py-24 z-10">
 			<div class="flex flex-col justify-stretch my-container m-auto">
-				<p class="text-5xl py-8 font-display text-teal-500 uppercase md:mx-3">Why Now?</p>
-				<p class="text-xl md:mx-3">In today's rapidly evolving business landscape, staying ahead means embracing the technologies that will shape tomorrow. The window for gaining a strategic advantage through AI is closing fast. As more businesses, large and small, integrate AI into their core operations, early adoption of AI is not just an opportunity - it's a necessity.</p>
-				<p class="text-xl md:mx-3 mt-5">Those who act now can gain a competitive edge, streamline operations, and unlock new growth opportunities. Waiting could mean missing out on significant cost savings, revenue growth, market positioning, and risking obsolescence as competitors leverage AI to innovate and scale faster.</p>
-				<p class="text-xl md:mx-3 mt-5">The window of opportunity to be a leader in AI-driven innovation is now.</p>
-				<p class="text-2xl pt-10 pb-14 md:mx-3">But don't just take our word for it.</p>
-				<div class="grid grid-cols-1 md:grid-cols-2">
-					<StatCard
-						client:visible
-						value={94}
-						desc="business executives who believe AI is a key to success in the future"
-						source="Deloitte"
-						url="https://www2.deloitte.com/us/en/pages/consulting/articles/state-of-ai-2022.html"
-					/>
-					<StatCard
-						client:visible
-						value={92}
-						desc="Fortune 500 companies that use AI"
-						source="Reuters"
-						url="https://www.reuters.com/technology/artificial-intelligence/openai-says-chatgpts-weekly-users-have-grown-200-million-2024-08-29/"
-					/>
-					<StatCard
-						client:visible
-						value={16}
-						desc="avg. revenue increase reported after adopting Gen AI"
-						source="Gartner"
-						url="https://www.gartner.com/en/newsroom/press-releases/2024-07-29-gartner-predicts-30-percent-of-generative-ai-projects-will-be-abandoned-after-proof-of-concept-by-end-of-2025"
-					/>
-					<StatCard
-						client:visible
-						value={15}
-						desc="avg. cost savings reported after adopting Gen AI"
-						source="Gartner"
-						url="https://www.gartner.com/en/newsroom/press-releases/2024-07-29-gartner-predicts-30-percent-of-generative-ai-projects-will-be-abandoned-after-proof-of-concept-by-end-of-2025"
-					/>
-					<!-- <StatCard
-						client:visible
-						value={23}
-						desc="avg. productivity boost reported after adopting AI"
-						source="Gartner"
-						url="https://www.gartner.com/en/newsroom/press-releases/2024-07-29-gartner-predicts-30-percent-of-generative-ai-projects-will-be-abandoned-after-proof-of-concept-by-end-of-2025"
-					/> -->
+				<h2 class="section-title">Not Your Average Chatbot</h2>
+				<h4 class="section-subtitle">(Our Secret Sauce)</h4>
+				<p class="text-xl md:mx-3">Nuroverse Intelligence is built upon a foundation in wellness, including capabilities beyond the leading chatbot services that are especially helpful to your wellness clients.</p>
+				<ul class="md:mx-3 mt-5">
+					<li class="my-5 sm:my-7"><span class="font-bold text-trusty-300 pr-2">Perceptive To Emotions:</span>Trained with 1,000+ verbal cues and 10+ clinically proven therapy techniques</li>
+					<li class="my-5 sm:my-7"><span class="font-bold text-trusty-300 pr-2">Advanced Memory & Learning:</span>Collects insights from each conversation to deliver more personalized and relevant responses for the client</li>
+					<li class="my-5 sm:my-7"><span class="font-bold text-trusty-300 pr-2">Integrated With Your Core Services:</span>Maximize the impact of AI with integrations that complement and enhance your core services</li>
+				</ul>
+				<p class="text-xl md:mx-3 mt-5">These specialized features make our Intelligence ideal for a range of applications, like:</p>
+				<InspirationCarousel client:load />
+				<div class="mt-14 md:mx-3">
+					<a href='https://trynuron.com/' target='_blank' class='text-lg uppercase font-bold text-trusty-300'>
+						<span class="underline underline-offset-4">{"See how we're using Nuroverse Intelligence"}</span><span>{' ›'}</span>
+					</a>
 				</div>
-				<p class="text-5xl py-8 mt-20 font-display text-teal-500 uppercase md:mx-3">Why Us?</p>
-				<p class="text-xl md:mx-3">Choosing the right partner for your AI journey is critical to your success.</p>
-				<p class="text-xl md:mx-3 mt-5">We understand that small businesses and startups have unique challenges when it comes to adopting AI. That’s why we’ve crafted our services specifically to meet those needs.</p>
-				<p class="text-xl md:mx-3 mt-5">We go beyond just providing AI solutions - we partner with you to understand your business inside and out, delivering customized strategies that solve real problems and drive growth. Our streamlined development process ensures that your AI initiatives are up and running quickly, helping you reduce costs and accelerate time-to-market.</p>
-				<p class="text-xl md:mx-3 mt-5">This unique combination of personalized service, speed, and value is what we pride ourselves on at Nuroverse.</p>
-				<div class="grid grid-cols-1 md:grid-cols-2 mt-14">
-					<FeatureCard
-						client:visible
-						icon={wand}
-						alt="Wand and stars icon"
-						desc="Tailor solutions to your business needs"
-						detail="Whether you need to integrate AI into an existing product or build one from scratch, we can help you leverage AI to solve your unique business challenges."
-					/>
+				<h2 class="section-title mt-24">Your Success, Our Support</h2>
+				<h4 class="section-subtitle">(How To Get Started)</h4>
+				<div>
+					<SupportStep subject='You' predicate="schedule an introductory call to discuss your business needs and integrations you'd like to add for your virtual support coach." />
+					<SupportStep subject='We' predicate="assess your needs to provide setup fee estimates for each proposed integration. This lets you start with the most beneficial ones, validate ROI, and make further enhancements as needed." />
+					<SupportStep subject='We' predicate="collaborate with your IT team and finalize cost, schedule and commitments. Integrations typically take a few weeks, but may take longer depending on complexity. Our existing architecture helps lower costs and speed up time-to-market compared to traditional IT service providers." />
+					<SupportStep subject='You' predicate="receive your virtual support coach, fully integrated into your existing solutions and ready to go live." />
+					<SupportStep subject='We' predicate="provide ongoing support and maintenance throughout your subscription. All improvements to our infrastructure and core integrations are automatically applied to your coach." />
+				</div>
+				<PricingSection client:load />
+				<h2 class="section-title mt-24">Operate Smart, Not Hard</h2>
+				<h4 class="section-subtitle">(Why Choose Us)</h4>
+				<div class="grid grid-cols-1 lg:grid-cols-3">
 					<FeatureCard
 						client:visible
 						icon={timer}
@@ -95,20 +71,15 @@ import wand from '../images/wand.svg';
 						detail="Our feature-scoped and Pay-As-You-Go pricing allows you to start small, validate and scale up as you see fit."
 					/>
 				</div>
-				<p class="text-5xl py-8 mt-20 font-display text-teal-500 uppercase md:mx-3">Intrigued?</p>
-				<p class="text-xl md:mx-3">We are committed to making AI accessible and valuable for smaller businesses like yours, empowering you to harness the power of AI without the complexity and high costs typically associated with it.</p>
-				<p class="text-xl md:mx-3 mt-5">Innovate faster and more affordably with Nuroverse</p>
-				<p class="text-xl md:mx-3 mt-5">Let's discuss AI solutions that are not only tailored to your unique business needs but also designed to deliver results quickly.</p>
-				<div class="flex flex-col md:flex-row items-baseline">
-					<div class="mt-10 md:mx-3">
-						<a href="https://calendly.com/d/cn5q-4tr-cj6/nuroverse-introductory-call" target="_blank" class="btn-secondary hover:cursor-pointer">Schedule A Call</a>
-					</div>
-					<div class="flex flex-row mt-4">
-						<span class="text-xl pt-1 pr-2">or reach out on</span>
-						<a href="mailto:hello@nuroverse.co" target="_blank" class="text-xl text-teal-500 underline underline-offset-4 pt-1 mr-2">Email</a>
-						<a href="https://www.linkedin.com/company/nuroverse" target="_blank" class="text-xl text-teal-500 underline underline-offset-4 pt-1 mr-2">LinkedIn</a>
-					</div>
+				<h2 class="section-title pb-7 mt-24">Intrigued?</h2>
+				<p class="text-xl md:mx-3">In today's rapidly evolving business landscape, staying ahead means embracing the technologies that will shape tomorrow. The window for gaining a strategic advantage through AI is closing fast. As more businesses, large and small, integrate AI into their core operations, adoption of AI is not just an opportunity- it's a necessity.</p>
+				<p class="text-xl md:mx-3 mt-5">Whether you're looking to integrate your support coach into an existing product or launch it as a standalone solution, we're here to guide you at every stage of the process.</p>
+				<div class="mt-10 md:mx-3">
+					<a href="https://calendly.com/d/cn5q-4tr-cj6/nuroverse-introductory-call" target="_blank" class="btn-secondary hover:cursor-pointer">Schedule A Call</a>
 				</div>
+				<h2 class="section-title pb-7 mt-24">Not Sure Yet?</h2>
+				<p class="text-xl md:mx-3">Reach out to us and we'll gladly clarify any details to help you determine if our services are a good fit for your business.</p>
+				<SubmissionForm client:load />
 			</div>
 		</div>
 		<Footer />
