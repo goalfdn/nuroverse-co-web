@@ -5,9 +5,10 @@ import '@fontsource/zen-maru-gothic';
 
 interface Props {
 	title: string;
+	description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 
 const prefix = import.meta.env.NOVUS_URL_PREFIX;
 ---
@@ -16,10 +17,10 @@ const prefix = import.meta.env.NOVUS_URL_PREFIX;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="the beating heart of innovation" />
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
-		<meta property="og:title" content="AI Support Coach for Wellness Services" />
-		<meta property="og:description" content="Simple, affordable and scalable." />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
 		<meta property="og:image" content="https://nuroverse-public.s3.us-east-2.amazonaws.com/og-image.png" />
 		<link rel="icon" type="image/svg+xml" href={favicon.src} />
 		<link rel="apple-touch-icon" href={favicon.src} />
