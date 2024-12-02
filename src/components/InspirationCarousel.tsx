@@ -8,63 +8,63 @@ interface CarouselItem {
 const CAROUSEL_ITEMS: CarouselItem[] = [
   {
     title: "AI-Powered Therapy Assistant",
-    description: "Streamline client interactions with a virtual support coach that automates check-ins and scheduling. Keep clients engaged with timely therapeutic resources and free your therapists to focus on deeper client needs– while improving overall operational efficiency."
+    description: "Streamline client interactions with a virtual wellness coordinator that automates check-ins and scheduling. Keep clients engaged with timely therapeutic resources and free your therapists to focus on deeper client needs– while improving overall operational efficiency."
   },
   {
     title: "Personalized Health Coach",
-    description: "Complement your current wellness offerings with a virtual support coach that creates individualized wellness plans. Track client progress and provide ongoing motivational support– enhancing client satisfaction and loyalty, and attracting new clients seeking personalized care."
+    description: "Complement your current wellness offerings with a virtual wellness coordinator that creates individualized wellness plans. Track client progress and provide ongoing motivational support– enhancing client satisfaction and loyalty, and attracting new clients seeking personalized care."
   },
   {
     title: "Virtual Group Therapy Facilitator",
-    description: "Expand accessibility to mental health services with a virtual support coach that manages online support groups. Facilitate discussions and gather feedback– making your services more engaging and inclusive for clients."
+    description: "Expand accessibility to mental health services with a virtual wellness coordinator that manages online support groups. Facilitate discussions and gather feedback– making your services more engaging and inclusive for clients."
   },
   {
     title: "Wellness Challenge Coordinator",
-    description: "Foster community engagement by incorporating a virtual support coach that organizes and tracks corporate wellness challenges. Encourage participation and accountability– cultivating a healthier workplace culture within your organization."
+    description: "Foster community engagement by incorporating a virtual wellness coordinator that organizes and tracks corporate wellness challenges. Encourage participation and accountability– cultivating a healthier workplace culture within your organization."
   },
   {
     title: "Holistic Treatment Advisor",
-    description: "Enhance your holistic health services by providing personalized recommendations for complementary therapies with a virtual support coach. Help clients craft tailored wellness routines– reinforcing your brand as a comprehensive provider of holistic care."
+    description: "Enhance your holistic health services by providing personalized recommendations for complementary therapies with a virtual wellness coordinator. Help clients craft tailored wellness routines– reinforcing your brand as a comprehensive provider of holistic care."
   },
   {
     title: "On-Demand Nutrition Coach",
-    description: "Scale your nutrition services with a virtual support coach that delivers instant meal planning and dietary advice. Meet client needs efficiently– allowing you to enhance service delivery and encourage healthier eating habits."
+    description: "Scale your nutrition services with a virtual wellness coordinator that delivers instant meal planning and dietary advice. Meet client needs efficiently– allowing you to enhance service delivery and encourage healthier eating habits."
   },
   {
     title: "Fitness Class AI Instructor",
-    description: "Transform your gym's offerings by integrating a virtual support coach that provides on-demand, tailored fitness classes and routines. Offer members the flexibility to exercise on their terms– maximizing engagement and satisfaction with your services."
+    description: "Transform your gym's offerings by integrating a virtual wellness coordinator that provides on-demand, tailored fitness classes and routines. Offer members the flexibility to exercise on their terms– maximizing engagement and satisfaction with your services."
   },
   {
     title: "Crisis Management Support Agent",
-    description: "Enhance care with a virtual support coach that provides immediate resources and coping strategies for clients in distress. Offer timely support without overextending your staff– ensuring your clients receive the help they need."
+    description: "Enhance care with a virtual wellness coordinator that provides immediate resources and coping strategies for clients in distress. Offer timely support without overextending your staff– ensuring your clients receive the help they need."
   },
   {
     title: "Sleep Wellness Consultant",
-    description: "Innovate your sleep services with a virtual support coach that analyzes sleep data and offers personalized recommendations. Create new opportunities for client engagement– improving outcomes and expanding your service portfolio."
+    description: "Innovate your sleep services with a virtual wellness coordinator that analyzes sleep data and offers personalized recommendations. Create new opportunities for client engagement– improving outcomes and expanding your service portfolio."
   },
   {
     title: "Family Health Coordinator",
-    description: "Cater to family needs by integrating a virtual support coach that provides targeted resources and support. Address the unique health concerns of families– fostering a supportive environment for comprehensive care."
+    description: "Cater to family needs by integrating a virtual wellness coordinator that provides targeted resources and support. Address the unique health concerns of families– fostering a supportive environment for comprehensive care."
   },
   {
     title: "Digital Mental Wellness Hub",
-    description: "Centralize mental health resources with a virtual support coach that connects users to various support services. Facilitate referrals and enhance your support systems– making it easier for clients to access the help they need."
+    description: "Centralize mental health resources with a virtual wellness coordinator that connects users to various support services. Facilitate referrals and enhance your support systems– making it easier for clients to access the help they need."
   },
   {
     title: "Work-Life Balance Advisor",
-    description: "Strengthen your employee assistance programs with a virtual support coach that offers personalized tips and resources for achieving work-life balance. Improve employee well-being– enhancing the effectiveness of your programs."
+    description: "Strengthen your employee assistance programs with a virtual wellness coordinator that offers personalized tips and resources for achieving work-life balance. Improve employee well-being– enhancing the effectiveness of your programs."
   },
   {
     title: "Youth Engagement Coach",
-    description: "Address adolescent mental health needs with a virtual support coach that delivers targeted resources and coping strategies. Better meet the unique challenges of younger demographics– supporting their mental well-being."
+    description: "Address adolescent mental health needs with a virtual wellness coordinator that delivers targeted resources and coping strategies. Better meet the unique challenges of younger demographics– supporting their mental well-being."
   },
   {
     title: "Chronic Condition Management Agent",
-    description: "Enhance patient care by integrating a virtual support coach that provides ongoing support and tracking for clients with chronic illnesses. Reinforce your commitment to comprehensive care– improving patient engagement and health outcomes."
+    description: "Enhance patient care by integrating a virtual wellness coordinator that provides ongoing support and tracking for clients with chronic illnesses. Reinforce your commitment to comprehensive care– improving patient engagement and health outcomes."
   },
   {
     title: "Integrative Health Resource Hub",
-    description: "Guide users through holistic health options with a virtual support coach that aggregates various wellness resources. Enhance client experiences by providing easy access to complementary health services– aligning with your existing offerings."
+    description: "Guide users through holistic health options with a virtual wellness coordinator that aggregates various wellness resources. Enhance client experiences by providing easy access to complementary health services– aligning with your existing offerings."
   },
 ];
 

@@ -52,12 +52,12 @@ export default function Hero() {
       <div className='absolute top-0 bottom-0 right-0 left-0 bg-trusty-900 opacity-70 z-10' />
       <div className='flex flex-1 w-full h-full z-20'>
         <div className='my-container m-auto z-20'>
-          <h1 className='text-5xl md:text-6xl text-serenity font-display pt-2'>
-            ELEVATE YOUR BUSINESS
+          <h1 className='text-5xl md:text-6xl text-serenity uppercase font-display pt-2'>
+            Boost Client Outcomes With A.I.
           </h1>
-          <h2 className='py-7 text-trusty-50 text-xl md:text-2xl'>
-            Nuroverse Intelligence empowers your health/wellness business to offer the advantages of AI to your customers through easy-to-integrate virtual support coaches.
-          </h2>
+          <p className='py-7 text-trusty-50 text-xl md:text-2xl'>
+            Nuroverse Intelligence integrates our virtual wellness coordinator with your healthcare service to coordinate with providers and offer ongoing support to your clients.
+          </p>
           <div>
             <a href='https://calendly.com/d/cn5q-4tr-cj6/nuroverse-introductory-call' target='_blank' className="btn-primary">
               {'Get Started'}
